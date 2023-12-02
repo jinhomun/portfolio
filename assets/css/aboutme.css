@@ -9,9 +9,9 @@
     grid-template-rows: repeat(4, 25vh);
     grid-template-areas:
         "box1 box1 box1 box4"
-        "box1 box1 box1 box7"
+        "box1 box1 box1 box8"
         "box1 box1 box1 box12"
-        "box13 box10 box15 box15"
+        "box13 box14 box16 box16"
     ;
 
     font-family: 'ChosunNm';
@@ -83,4 +83,191 @@
 
 #item__wrap>div:nth-child(16) {
     grid-area: box16;
+}
+.item__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+.item__img img {
+    width: 100vh;
+    height: 100%;
+}
+
+.item__home p{
+    font-family: var(--main-gmark);
+    font-weight: 100;
+    font-size: 4vh;
+    float: right;
+    margin-top: 3vh;
+    margin-right: 3vh;
+    
+}
+.item__home img {
+  padding: 1vh 3vh  0 3vh;
+ 
+}
+
+.item h3 {
+    font-family: var(--main-gmark);
+    font-size: 2vw;
+    font-weight: 100;
+    padding: 1vw 0vw 0vw 1vw;
+    text-transform: uppercase;
+}
+
+.item .desc {
+    font-size: 1vw;
+    line-height: 160%;
+    padding: 1vw 2vw 1vw 1vw;
+}
+
+.item__title {
+    position: relative;
+}
+
+.item__title h2 {
+    font-family: var(--main-gmark);
+    font-size: 7vw;
+    font-weight: bold;
+    position: absolute;
+    text-transform: uppercase;
+    padding: 2vw;
+}
+
+.item__icon {
+    display: flex;
+    /* justify-content: flex-end; */
+    align-items: flex-end;
+}
+
+.item__icon img {
+    width: 1.8vw;
+    height: 1.8vw;
+    margin-left: 1vw;
+    margin-bottom: 1vw;
+}
+@media (max-width: 940px) {
+
+    .item__img img {
+        width: 70vh;
+        height: 100%;
+    }
+    .item h3 {
+        font-family: var(--main-gmark);
+        font-size: 2vw;
+        font-weight: 100;
+        padding: 1vw 0vw 0vw 2vw;
+        text-transform: uppercase;
+    }
+    .item .desc {
+        font-size: 1.3vw;
+        line-height: 160%;
+        padding: 2vw;
+        padding-bottom: 0vw;
+    }
+}
+@media (max-width: 768px) {
+    .item__img img {
+        width: 70vw;
+        height: 100%;
+    }
+    .item .desc {
+        font-size: 1.3vw;
+    }
+    
+    .item ul {
+        padding-left: 2vw;
+        padding-top: 2vw;
+    }
+    .item li a {
+        width: 4vw;
+        height: 4vw;
+        line-height: 4vw;
+        font-size: 3vw;
+    }
+}
+@media (max-width: 600px) 
+{
+    #item__wrap {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(8, 12.5vh);
+        grid-template-areas:
+            "box1 box1"
+            "box1 box1" 
+            "box1 box1"
+            "box1 box1"
+            "box16 box16" 
+            "box14 box14"
+            "box8 box12"
+            "box13 box4"
+
+        ;
+
+        font-family: 'ChosunNm';
+    }
+    .item .desc {
+        font-size: 1.6vw;
+    }
+    .item__img img {
+        width: 100vw;
+        height: 100%;
+    }
+    .item__title h2 {
+        font-family: var(--main-gmark);
+        font-size: 12vw;
+        font-weight: bold;
+        position: absolute;
+        text-transform: uppercase;
+        padding: 2vw;
+        margin-left: 6vw;
+    }
+
+    .item__left text {
+        display: block;
+    }
+    
+    .item__left h3 {
+        font-size: 7vh;
+        font-family: var(--main-gmark);
+        font-weight: lighter;
+        writing-mode: horizontal-tb; /* 수정된 부분 */
+        margin-top: 2vh;
+        margin-left: 2vh;
+    }
+    
+    .item__left p {
+        font-family: var(--main-chosun);
+        font-size: 2vh;
+        text-orientation: sideways;
+        writing-mode: vertical-rl;
+        margin-bottom: 2vh;
+    }
+    .item__kr h3 {
+        font-family: var(--main-gmark);
+        font-weight: bolder;
+        font-size: 13vw;
+        text-align: left;
+        margin-top: 3vw;
+        margin-left: 5vw;
+    }
+    .item__kr img {
+        width: 7vw;
+        height: 7vw;
+        float: right;
+        margin-right: 1vw;
+        margin-top: 1vw;
+    }
+    .item__about img{
+        width: 50vw;
+        height: 100%;
+    }
+    .item__icon img {
+        width: 5vw;
+        height: 5vw;
+        margin-right: 1vw;
+        margin-bottom: 1vw;
+    }
 }

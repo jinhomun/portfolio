@@ -6,6 +6,6 @@
 @import "vars.css";
 @import "commons.css";
 
-/* 섹션별 설정 */
+/* 섹션별 설정
 @import "main.css";
-@import "aboutme.css";
+@import "aboutme.css"; */
